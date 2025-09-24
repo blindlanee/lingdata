@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>моя личная страничка</title>
+  <style>
+    :root{
+      --bg: #f7f3ef;
+      --card: #ffffff;
+      --accent: #c9b79a;
+      --accent-dark: #aa9274;
+      --text: #3b2f2f;
+      --muted: #7a6b63;
+      --radius: 12px;
+      --max-width: 900px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background: linear-gradient(180deg, var(--bg), #f8f6f4 80%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width:var(--max-width);
+      margin:28px auto;
+      padding:24px;
+    }
+
+    header.site-header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      background:linear-gradient(90deg, rgba(201,183,154,0.16), rgba(201,183,154,0.06));
+      border-radius:var(--radius);
+      padding:14px 18px;
+      box-shadow: 0 6px 18px rgba(60,48,40,0.06);
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      text-decoration:none;
+      color:var(--text);
+    }
+    nav.main-menu a{
+      margin-left:12px;
+      text-decoration:none;
+      color:var(--accent-dark);
+      font-weight:600;
+    }
+
+    .main{
+      display:grid;
+      grid-template-columns: 260px 1fr;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .profile{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 20px rgba(60,48,40,0.04);
+      text-align:center;
+    }
+    .profile img{
+      width:100%;
+      height:auto;
+      max-height:360px;
+      object-fit:cover;
+      border-radius:10px;
+      display:block;
+      margin:0 auto 12px;
+    }
+    .profile h2{ margin:8px 0 4px; font-size:1.2rem;}
+    .profile p.muted{ color:var(--muted); margin:0; font-size:0.95rem;}
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: 0 10px 20px rgba(60,48,40,0.04);
+    }
+    h1.page-title{
+      margin:0 0 8px;
+      font-size:1.6rem;
+    }
+    .bio{
+      line-height:1.5;
+      color:var(--text);
+    }
+    .meta-list{ margin:12px 0 0; padding:0; list-style:none; }
+    .meta-list li{ margin:6px 0; color:var(--muted); }
+
+    a.btn{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:10px;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 6px 12px rgba(170,146,116,0.12);
+    }
+    a.link{
+      color:var(--accent-dark);
+      text-decoration:none;
+    }
+
+    .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .tag{
+      background:rgba(201,183,154,0.12);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:0.85rem;
+      color:var(--accent-dark);
+    }
+
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:0.9rem;
+      text-align:center;
+    }
+
+    @media (max-width:760px){
+      .main{ grid-template-columns: 1fr; }
+      header.site-header{ flex-direction:column; align-items:flex-start; gap:10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header" role="banner">
+      <a class="brand" href="https://ling.hse.ru/" target="_blank" rel="noopener noreferrer">
+        <strong>школа лингвистики</strong>
+      </a>
+      <nav class="main-menu">
+        <a href="#about">обо мне</a>
+        <a href="#projects">проекты</a>
+        <a href="#contacts">контакты</a>
+      </nav>
+    </header>
+
+    <main class="main" role="main">
+      <aside class="profile" aria-label="профиль">
+        <img src="myphoto.jpg" alt="вот так вот выгляжу" />
+        <h2>(вера) ника стрельчук</h2>
+        <p class="muted">город: радомышль, потом москва<br/>школа: четырнадцатая</p>
+        <ul class="meta-list">
+          <li>родной язык: вообще суржик, но по сути русский и украинский</li>
+          <li>специализация: лингвистика, фундаментальная и компьютерная</li>
+          <li>а раньше была шия</li>
+        </ul>
+
+        <p style="margin-top:12px;">
+          <a class="btn" href="https://t.me/blindlanee" target="_blank" rel="noopener noreferrer">связаться</a>
+        </p>
+
+        <!-- Контакты теперь под кнопкой -->
+        <section id="contacts" style="margin-top:14px; text-align:left;">
+          <h3 style="margin:0 0 8px">контакты</h3>
+          <p class="muted">почта: <a class="link" href="mailto:vsstrelchuk@edu.hse.ru">vsstrelchuk@edu.hse.ru</a></p>
+          <p class="muted">telegram: <a class="link" href="https://t.me/blindlanee" target="_blank" rel="noopener">@blindlanee</a></p>
+          <p class="muted">GitHub: <a class="link" href="https://github.com/blindlanee" target="_blank" rel="noopener">github.com/blindlanee</a></p>
+        </section>
+      </aside>
+
+      <section class="card" id="about">
+        <h1 class="page-title">обо мне....</h1>
+        <p class="bio">
+          добрый день!! меня зовут <strong>ника</strong> (вообще вера, но это долгая история) и я студентка вышки на программе фундаментальной и компьютерной лингвистики. поступила сюда по егэ, так что никаких супер-заслуг за олимпиады не найдется. но я проучилась некоторое время в школе иностранных языков (тоже в вышке) и очень сильно заразилась интересом к лингвистике на парах по языкознанию. поэтому теперь я здесь...
+        </p>
+        <p class="bio">
+          вообще ни о чем не жалею, все очень хорошо. математика сложная, а так жить можно. и олег волков, вы просто замечательный человек. я вас уже очень люблю, и, думаю, не одна такая.
+        </p>
+
+        <h2 id="projects" style="margin-top:18px;font-size:1.1rem">проекты</h2>
+        <p class="muted" style="margin:6px 0 0">тут пока ничего нет, но ссылку на гитхаб добавлю:</p>
+        <ul>
+          <li><a class="link" href="https://github.com/blindlanee" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+
+        <h2 style="margin-top:14px;font-size:1.1rem">интересное о себе</h2>
+        <p class="bio">
+  на самом деле сложно придумать чего такого сюда написать... но допустим так.
+</p>
+<p class="bio">
+  с детства очень увлекалась языками. мама много говорила на английском, бабушка только на украинском, а всякие тети и дяди кроме русского вообще ничего не понимали. в общем, рядом всегда было очень много языков.
+</p>
+<p class="bio">
+  к тому же, моя первая школа считалась с уклоном в иностранные языки, поэтому у меня был и английский с первого класса и испанский со второго. и вот в средней школе я решила разрушить влажные мечты семьи об архитектурном и связаться именно с языками. а дальше лекции по языкознанию довели меня окончательно.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="muted">© 2025 ника (вера) стрельчук</p>
+    </footer>
+  </div>
+</body>
+</html>
