@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences version="1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/Prefs_v1.1.xsd">
+    <pref key="FrameSize">
+        <Object class="java.awt.Dimension">1294,1047</Object>
+    </pref>
+    <pref key="LayoutManager.SelectedTabIndex">
+        <Int>1</Int>
+    </pref>
+    <pref key="LayoutManager.VisibleMultiTierViewer">
+        <String>mpi.eudico.client.annotator.viewer.TimeLineViewer</String>
+    </pref>
+    <pref key="TextViewer.TierName">
+        <String>default</String>
+    </pref>
+    <pref key="MultiTierViewer.ActiveTierName">
+        <String>pos@gsk2007m</String>
+    </pref>
+    <pref key="TokenizeDialog.DestTier">
+        <String>words@vss2006f</String>
+    </pref>
+    <pref key="SelectionEndTime">
+        <Long>597560</Long>
+    </pref>
+    <pref key="LayoutManager.CurrentMode">
+        <Int>1</Int>
+    </pref>
+    <prefGroup key="CommentViewer.Columns">
+        <pref key="Ветка">
+            <Int>75</Int>
+        </pref>
+        <pref key="Слой">
+            <Int>75</Int>
+        </pref>
+        <pref key="Инициалы">
+            <Int>75</Int>
+        </pref>
+        <pref key="Время окончания">
+            <Int>75</Int>
+        </pref>
+        <pref key="Дата создания">
+            <Int>75</Int>
+        </pref>
+        <pref key="Время начала">
+            <Int>75</Int>
+        </pref>
+        <pref key="Отправитель">
+            <Int>0</Int>
+        </pref>
+        <pref key="Получатель">
+            <Int>0</Int>
+        </pref>
+        <pref key="Дата изменения">
+            <Int>75</Int>
+        </pref>
+        <pref key="Комментарий">
+            <Int>75</Int>
+        </pref>
+    </prefGroup>
+    <prefGroup key="TierFonts"/>
+    <prefList key="CommentViewer.Columns.Order">
+        <String>Время начала</String>
+        <String>Время окончания</String>
+        <String>Слой</String>
+        <String>Инициалы</String>
+        <String>Комментарий</String>
+        <String>Ветка</String>
+        <String>Отправитель</String>
+        <String>Получатель</String>
+        <String>Дата создания</String>
+        <String>Дата изменения</String>
+    </prefList>
+    <pref key="ActiveRecognizerName">
+        <String>Whisper transcribe/translate</String>
+    </pref>
+    <pref key="FrameLocation">
+        <Object class="java.awt.Point">1273,0</Object>
+    </pref>
+    <pref key="SelectionBeginTime">
+        <Long>596500</Long>
+    </pref>
+    <pref key="TokenizeDialog.SourceTier">
+        <String>text@vss2006f</String>
+    </pref>
+    <prefGroup key="BAS - WebMAUS Basic">
+        <pref key="LANGUAGE">
+            <String>deu-DE</String>
+        </pref>
+        <prefGroup key="TierUrl"/>
+        <pref key="SignalParamName">
+            <String>SIGNAL</String>
+        </pref>
+        <pref key="ServiceName">
+            <String>runMAUSBasic</String>
+        </pref>
+        <pref key="TextParamName">
+            <String>TEXT</String>
+        </pref>
+    </prefGroup>
+    <prefList key="MultiTierViewer.HiddenTiers"/>
+    <pref key="TimeScaleBeginTime">
+        <Long>561430</Long>
+    </pref>
+    <pref key="MediaTime">
+        <Long>565040</Long>
+    </pref>
+    <prefGroup key="TierColors">
+        <pref key="default">
+            <Object class="java.awt.Color">90,90,160</Object>
+        </pref>
+        <pref key="text@gsk2007m">
+            <Object class="java.awt.Color">0,90,90</Object>
+        </pref>
+        <pref key="words@gsk2007m">
+            <Object class="java.awt.Color">90,0,90</Object>
+        </pref>
+        <pref key="text@vss2006f">
+            <Object class="java.awt.Color">90,160,90</Object>
+        </pref>
+        <pref key="words@vss2006f">
+            <Object class="java.awt.Color">160,90,160</Object>
+        </pref>
+    </prefGroup>
+    <prefList key="MultiTierViewer.TierOrder">
+        <String>default</String>
+        <String>text@gsk2007m</String>
+        <String>text@vss2006f</String>
+        <String>words@gsk2007m</String>
+        <String>words@vss2006f</String>
+        <String>pos@gsk2007m</String>
+        <String>pos@vss2006f</String>
+    </prefList>
+    <prefGroup key="TierHighlightColors"/>
+    <pref key="LayoutManager.SplitPaneDividerLocation">
+        <Int>1</Int>
+    </pref>
+    <prefList key="CommentViewer.Columns.Hidden">
+        <String>Отправитель</String>
+        <String>Получатель</String>
+    </prefList>
+    <prefGroup key="Whisper transcribe/translate">
+        <pref key="--beam_size">
+            <Float>5.0</Float>
+        </pref>
+        <pref key="run-command">
+            <String>whisper</String>
+        </pref>
+        <pref key="--no_speech_threshold">
+            <Float>0.6</Float>
+        </pref>
+        <pref key="--patience">
+            <Float>1.0</Float>
+        </pref>
+        <pref key="--temperature_increment_on_fallback">
+            <Float>0.2</Float>
+        </pref>
+        <pref key="--best_of">
+            <Float>5.0</Float>
+        </pref>
+        <pref key="--word_timestamps">
+            <String>False</String>
+        </pref>
+        <pref key="--length_penalty">
+            <Float>0.5</Float>
+        </pref>
+        <pref key="--compression_ratio_threshold">
+            <Float>2.4</Float>
+        </pref>
+        <pref key="--temperature">
+            <Float>0.0</Float>
+        </pref>
+        <pref key="--logprob_threshold">
+            <Float>-1.0</Float>
+        </pref>
+        <pref key="--language">
+            <String>--</String>
+        </pref>
+        <pref key="audio">
+            <String>C:/Users/blindlanee/Downloads/VID_20251006_111214.mp4</String>
+        </pref>
+        <pref key="--fp16">
+            <String>True</String>
+        </pref>
+        <pref key="--suppress_tokens">
+            <String>-1</String>
+        </pref>
+        <pref key="--task">
+            <String>transcribe</String>
+        </pref>
+        <pref key="--model">
+            <String>base</String>
+        </pref>
+    </prefGroup>
+</preferences>
